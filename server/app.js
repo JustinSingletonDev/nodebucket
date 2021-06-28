@@ -54,7 +54,7 @@ mongoose.connect(conn, {
  */
 
 // Find Employee by ID
-app.get("/api/employees/:empId", async function(req, res) {
+app.get("/nodebucket/api/employees/:empId", async function(req, res) {
   Employee.findOne({empId: req.params.empId}, function(err, employee) {
     if(err) {
       console.log(err)
@@ -67,7 +67,7 @@ app.get("/api/employees/:empId", async function(req, res) {
 });
 
 // Find all tasks of an Employee
-app.get("/api/employees/:empId/tasks", function(req, res, next) {
+app.get("/nodebucket/api/employees/:empId/tasks", function(req, res, next) {
   Employee.findOne({empId: req.params.empId}, 'empId todo done', function(err, employee) {
     if(err) {
       console.log(err)
@@ -81,7 +81,7 @@ app.get("/api/employees/:empId/tasks", function(req, res, next) {
 });
 
 // Create a task for an Employee
-app.post("/api/employees/:empId/tasks", function(req, res, next) {
+app.post("/nodebucket/api/employees/:empId/tasks", function(req, res, next) {
   Employee.findOne({empId: req.params.empId}, function(err, employee) {
     if(err) {
       console.log(err)
@@ -106,7 +106,7 @@ app.post("/api/employees/:empId/tasks", function(req, res, next) {
 });
 
 // Edit a task for an Employee
-app.put('/api/employees/:empId/tasks/', function(req, res, next) {
+app.put('/nodebucket/api/employees/:empId/tasks/', function(req, res, next) {
   Employee.findOne({empId: req.params.empId }, function(err, employee) {
     if (err) {
       console.log(err);
@@ -129,7 +129,7 @@ app.put('/api/employees/:empId/tasks/', function(req, res, next) {
 });
 
 // Delete a task for an Employee
-app.delete("/api/employees/:empId/tasks/:taskId", function(req, res, next) {
+app.delete("/nodebucket/api/employees/:empId/tasks/:taskId", function(req, res, next) {
   Employee.findOne({empId: req.params.empId}, function(err, employee) {
     if(err) {
       console.log(err)
