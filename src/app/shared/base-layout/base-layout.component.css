@@ -1,0 +1,44 @@
+.logo {
+  margin-left: 75px;
+  font-size: 24px;
+  font-weight: lighter;;
+}
+
+.mat-toolbar {
+  background-color: rgb(235, 235, 235);
+}
+
+.navbar-container {
+  padding: 5px;
+  color: black;
+}
+
+.navbar-link {
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.main-content {
+  padding-left: 30px;
+}
+
+.footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.footer-content {
+  font-size: 16px;
+  font-weight: lighter;
+  padding-left: 100px;
+  letter-spacing: 3px;
+}
+
+.bu-link {
+  text-decoration: none;
+}
+
+.bu-link:hover {
+  text-decoration: underline;
+}

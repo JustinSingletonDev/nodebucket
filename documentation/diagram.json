@@ -1,0 +1,16 @@
+{
+  "empId": "1007",
+  "firstName": "Justin",
+  "lastName": "Singleton",
+  "todo": [
+    {
+      "item": "Organize the documents."
+    }
+  ],
+  "done": [
+    {
+      "item": "Shuffle the music."
+    }
+  ]
+
+}
